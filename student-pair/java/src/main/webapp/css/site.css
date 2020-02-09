@@ -1,0 +1,288 @@
+body {
+	width: 100%;
+	background-color: #212121;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+body, header, nav {
+	margin: 0px;
+}
+
+header {
+	background-color: #0099CC;
+	color: white;
+	padding: 10px 10px;
+}
+
+nav {
+	background-color: #8DC63F;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 50px;
+}
+
+nav ul {
+	float: left;
+}
+
+nav li {
+	list-style-type: none;
+	color: white;
+	margin-left: 25px;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	float: left;
+}
+
+nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+/* star rating */
+.filled{
+	color: #ffc000;
+}
+
+#recipe-tile {
+	vertical-align: top;
+	margin-top: 0px;
+	height: 300px;
+	width: 300px;
+	background-color: #cfeab9;
+	
+}
+
+#recipe-image-tile {
+	width: 300px;
+	height: auto;
+	margin: 0px;
+}
+
+#recipe-name-tile {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+#recipe-rating-tile {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#recipe-ingredient-count-tile {
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#text-container-tile {
+	height: auto;
+	width: 300px;
+}
+
+#biggest-outer-container-tile {
+	width: 80%;
+	margin: auto;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-radius: 7px;
+}
+
+#outer-container-tile {
+	display: block;
+	margin: auto;
+	vertical-align: top;
+	min-height: 450px;
+	background-color: #ffffff;
+	border-radius: 7px;
+}
+
+#inner-container-tile {
+	clear: both;
+	margin: auto;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+
+h3 {
+	padding-bottom: 10px;
+	margin: 0px;
+}
+
+     /*end of tile code*/
+
+#biggest-outer-container-table {
+	width: 80%;
+	margin: auto;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-radius: 7px;
+	min-height: 450px;
+	
+}
+
+#outer-container-table {
+	padding-left: 150px;
+	padding-right: 150px;
+	margin: auto;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-radius: 7px;
+	display: flex;
+	justify-content: space-around;
+	
+	
+}
+
+#inner-container-table {
+	padding-right: 110px;
+	width: 80%;
+	clear: both;
+	display: block;
+	margin: auto;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-radius: 7px;
+	display: grid;
+	grid-template-areas:
+	"name1 name name name"
+	"type1 type type type"
+	"cooktime1 cooktime cooktime cooktime"
+	"ingredients1 ingredients ingredients ingredients"
+	"rating1 rating rating rating";
+	
+	grid-template-columns: 1fr 2fr 2fr 2fr ;
+	
+}
+
+#photo-table {
+	padding-left: 9px;
+	width: 125px;
+	height: auto;
+}
+
+#name1 {
+	grid-area: name1;
+	text-align: center;
+}
+
+#type1 {
+	grid-area: type1;
+	text-align: center;
+}
+
+#cooktime1 {
+	grid-area: cooktime1;
+	text-align: center;
+}
+
+#ingredients1 {
+	grid-area: ingredients1;
+	text-align: center;
+}
+
+#rating1 {
+	grid-area: rating1;
+	text-align: center;
+}
+
+.name {
+	background-color: #d4d4d4;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.type {
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.cooktime {
+	background-color: #d4d4d4;
+	text-align: center;
+}
+
+.ingredients {
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.rating {
+	background-color: #d4d4d4;
+	text-align: center;
+}
+
+.recipe-header {
+	text-align: center;
+}
+
+/* end of table code */
+
+#biggest-outer-container-detail {
+	width: 80%;
+	margin: auto;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-radius: 7px;
+	min-height: 450px;
+		display: grid;
+	grid-template-areas:
+	"picture description description blankSpace"
+	"ingredients ingredients ingredients ingredients "
+	"preparation preparation preparation preparation ";
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	
+}
+
+#detail-photo{
+	grid-area: picture;
+	width: 175px;
+	height: auto;
+	padding: 10px;
+}
+
+#description{
+	grid-area: description;
+}
+
+.detail-name{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.detial-type{
+	
+}
+.detail-cooktime{
+	
+}
+.detail-short-description{
+	
+}
+
+#blankSpace{
+	grid-area: blankSpace;
+}
+
+#detail-ingredients{
+	grid-area: ingredients;
+}
+#detail-preparation{
+	grid-area: preparation;
+}
+
